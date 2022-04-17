@@ -41,11 +41,13 @@ Create table products(
  alter table users modify column created_at datetime default current_timestamp;
  alter table orders modify column created_at datetime default current_timestamp;
  alter table products modify column created_at datetime default current_timestamp;
-
+-- DML insert
  insert into countries values('999','Haifa','asia');
  insert into users values('999','Haifa','haifaaseri8@gmail.com','f','1995','3','999');
  insert into orders values('3','4','start',2);
  insert into products values('5','fox','5','vaild',4);
  insert into order_products values('5','7','2');
+ --DML update
  update countries set name='faifal' where id='999';
+ --DML delet
 delete from products where id='5';
